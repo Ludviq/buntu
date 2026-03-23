@@ -1,0 +1,13 @@
+autoinstall:
+  version: 1
+  identity:
+    hostname: ubuntu-desktop
+    username: local-optimum
+    # generate a SHA512-based encrypted password: $ openssl passwd -6
+    password: "$6$5NTfGqu2fv6SAGzC$JwKYHgeNCpMPnfpHbM30u7WhLbh36EfndxhfKq9u8xK7BfiIviu0lAkgVa5erEoTCzfGnteBbpkVwdSFRsxDl1"
+  storage:
+    layout:
+      name: lvm
+  snaps:
+    - name: spotify
+      classic: false
