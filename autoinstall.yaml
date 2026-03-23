@@ -23,11 +23,6 @@ autoinstall:
     realname: Offgrid
     username: offgrid
 
-  keyboard:
-    layout: no
-    toggle: null
-    variant: ""
-
   storage:
     layout:
       name: lvm
