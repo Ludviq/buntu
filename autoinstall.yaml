@@ -1,0 +1,41 @@
+#cloud-config
+autoinstall:
+  version: 1
+  locale: nb_NO.UTF-8
+  timezone: Europe/Oslo
+  
+  refresh-installer:
+    update: true
+    channel: latest/edge
+
+  source:
+    id: ubuntu-desktop
+    search_drivers: true
+
+  codecs:
+    install: true
+  drivers:
+    install: true
+
+  identity:
+    hostname: Offgrid-loaner
+    password: "$6$5NTfGqu2fv6SAGzC$JwKYHgeNCpMPnfpHbM30u7WhLbh36EfndxhfKq9u8xK7BfiIviu0lAkgVa5erEoTCzfGnteBbpkVwdSFRsxDl1"
+    realname: Offgrid
+    username: offgrid
+
+  keyboard:
+    layout: no
+    toggle: null
+    variant: ""
+
+  storage:
+    layout:
+      name: lvm
+      sizing-policy: all
+
+  snaps:
+  - name: spotify
+
+  updates: all
+
+  shutdown: reboot
